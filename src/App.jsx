@@ -6,13 +6,14 @@ import IntroSection from './components/IntroSection'
 import SkillsSection from './components/SkillsSection'
 import ProjectsSection from './components/ProjectsSection'
 import SocialConnections from './components/SocialConnections'
-import ImageCursorTrail from "./components/ui/image-cursortrail"
+// import ImageCursorTrail from "./components/ui/image-cursortrail"
 import Footer from './components/Footer'
 import ServicesSection from './components/ServicesSection'
 import ExperienceSection from './components/ExperienceSection'
 
 import { TextScroll } from "./components/ui/text-scroll";
-
+import 'lenis/dist/lenis.css'
+import { ReactLenis, useLenis } from 'lenis/react'
 
 const images = [
   "https://images.pexels.com/photos/30082445/pexels-photo-30082445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -27,9 +28,15 @@ const images = [
   "https://images.unsplash.com/photo-1508873881324-c92a3fc536ba?q=80&w=1200&auto=format",
 ]
 
+
 function App() {
+    const lenis = useLenis((lenis) => {
+    // called every scroll
+    console.log(lenis)
+  })
   return (
     <>
+    <ReactLenis root />
       <Navbar />
     
 
