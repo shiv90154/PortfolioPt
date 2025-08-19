@@ -28,6 +28,7 @@ export default function CustomCursor() {
       el.addEventListener("mouseleave", () => setHovered(false));
     });
 
+    
     return () => {
       window.removeEventListener("mousemove", move);
       hoverables.forEach((el) => {
