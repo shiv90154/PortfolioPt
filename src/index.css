@@ -1,10 +1,10 @@
-
 @tailwind base;
 
 @layer base {
   ::selection {
     @apply bg-selection-bg text-selection-text;
   }
+
   ::-moz-selection {
     @apply bg-selection-bg text-selection-text;
   }
@@ -12,6 +12,7 @@
 
 @tailwind components;
 @tailwind utilities;
+
 /* Reset some default browser styles */
 * {
   margin: 0;
@@ -20,15 +21,19 @@
 }
 
 html {
-  scroll-behavior: auto !important; /* Disable native smooth scroll */
+  scroll-behavior: auto !important;
+  /* Disable native smooth scroll */
 }
+
 /* Global body styles */
 body {
   background-color: black;
   color: white;
- font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   line-height: 1.6;
-    overscroll-behavior: none; /* Prevent rubber-band effect */
+  overscroll-behavior: none;
+  cursor: none;
+  /* Prevent rubber-band effect */
 }
 
 @layer base {
@@ -59,6 +64,7 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 224 71.4% 4.1%;
     --foreground: 210 20% 98%;
@@ -91,6 +97,7 @@ body {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -100,12 +107,15 @@ body {
 
 /* Change text selection color */
 ::selection {
-  background: #ff4e4e; /* Red-400 */
+  background: #ff4e4e;
+  /* Red-400 */
   color: rgb(0, 0, 0);
 }
 
 /* For Firefox */
 ::-moz-selection {
-  background: #ff4e4e; /* Red-400 */
+  background: #ff4e4e;
+  /* Red-400 */
   color: rgb(0, 0, 0);
 }
+
