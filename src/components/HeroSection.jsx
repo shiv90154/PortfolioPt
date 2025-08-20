@@ -8,7 +8,7 @@ export default function HeroSection() {
 
       {/* Banner Image */}
       <img
-        src="/banner.png" // Put your banner image in the public folder
+        src="/bannr.jpg" // Put your banner image in the public folder
         alt="Shiv Banner"
         className="w-full max-w-5xl rounded-lg shadow-lg"
       />
